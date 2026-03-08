@@ -32,6 +32,36 @@ During the donation process, additional blood samples are taken for the screenin
 
 If the samples did not reveal any problems, the donated blood can then be delivered to health institutions in need and eventually administered to a patent. The filled questionnaire, together with the lab results of the blood samples are then sent (in digital form?) to a long term data storage for at least 30 years as required by Austrian legislation (5).
 
+## Consideration about collection, use, disclosure and storage of personal data
+
+- **Description of the personal data**
+  - Name and contact details
+  - Date of birth
+  - Appointment data
+  - Questionnaire answers
+  - Health data
+  - Medical measurements
+  - Laboratory test results
+  - Donation and traceability data
+
+- **Key privacy elements: purpose for which personal data is collected, processed, disclosed**
+  - Personal data is collected to organize appointments and assess donor eligibility.
+  - Health-related data is processed to protect donor health and ensure the safety of donated blood.
+  - Personal data may be disclosed internally to authorized medical staff and, where necessary, to laboratories or supervisory authorities.
+  - Personal data is stored to document the donation process and to comply with legal traceability and retention obligations.
+
+- **Nature and sensitivity of the personal data**
+  - The project processes sensitive personal data.
+  - This includes health data and possibly highly personal data from the questionnaire.
+  - The data requires a high level of confidentiality and protection because unauthorized access could seriously affect the privacy of the donor.
+
+## Conclusion: Is a DPIA necessary?
+
+- **A DPIA is necessary.**
+- The project involves the processing of sensitive personal data, especially health data.
+- It also includes long-term storage and medical assessment in a structured workflow.
+- Therefore, the processing is likely to result in a high risk to the rights and freedoms of the data subjects.
+- For that reason, carrying out a DPIA is necessary.
 
 ## Description of the process activity
 - **Types and amount of personal data being processed**
