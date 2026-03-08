@@ -30,7 +30,7 @@ If the measured values are within the required boundaries, the donor then visits
 
 During the donation process, additional blood samples are taken for the screening of the blood; the samples are, for instance, checked for HIV, Hepatitis B/C.
 
-If the samples did not reveal any problems, the donated blood can then be delivered to health institutions in need and eventually administered to a patent. The filled questionnaire, together with the lab results of the blood samples are then sent (in digital form?) to a long term data storage for at least 30 years as required by Austrian legislation (5).
+If the samples did not reveal any problems, the donated blood can then be delivered to health institutions in need and eventually administered to a patient. The filled questionnaire, together with the lab results of the blood samples are then sent (in digital form?) to a long term data storage for at least 30 years as required by Austrian legislation (5).
 
 ## Consideration about collection, use, disclosure and storage of personal data
 
@@ -52,7 +52,7 @@ If the samples did not reveal any problems, the donated blood can then be delive
 
 - **Nature and sensitivity of the personal data**
   - The project processes sensitive personal data.
-  - This includes health data and possibly highly personal data from the questionnaire.
+  - This includes health data and possibly highly personal data from the questionnaire like medication, allergies, drinking habits, etc.
   - The data requires a high level of confidentiality and protection because unauthorized access could seriously affect the privacy of the donor.
 
 ## Conclusion: Is a DPIA necessary?
@@ -65,7 +65,8 @@ If the samples did not reveal any problems, the donated blood can then be delive
 
 ## Description of the process activity
 - **Types and amount of personal data being processed**
-  - Personal data includes identification and contact data of the donor (Name, Address, Phonenumber)
+  - Personal data includes identification and contact data of the donor (name, 
+  address, phone number)
   - Appointment data
   - Questionnaire answers
   - Health records and medical measurements
@@ -91,9 +92,16 @@ If the samples did not reveal any problems, the donated blood can then be delive
   - Personal data is deleted or destroyed securely once it is no longer required by law or operations 
 
 ## Description of  purpose(s):
-FIXME
-- Purposes for which personal data is being processed in relation to the necessity and proportionality of the processing operations 
-- Details of the legal basis, such as the legitimate interest pursued by the controller
+
+- **Purposes for which personal data is being processed in relation to the necessity and proportionality of the processing operations**
+  - Appointment data is needed for scheduling and managing appointments with donors.
+  - Questionnaire answers and health data are needed for the medical staff to evaluate whether a prospective donor is eligible to donate blood and whether the donation is safe for both donor and recipient.
+  - Laboratory results and medical measurements are necessary to ensure that donated blood is safe for transfusion and complies with applicable medical standards.
+  - Donation and traceability data is needed becuase full tracability of the blood transfusion chain is required by Austrian Law
+  - Personal data is processed and retained to fulfill legal obligations under the Austrian Blutsicherheitsgesetz (BSG) and Blutspendeverordnung (BSV)
+
+- **Details of the legal basis, such as the legitimate interest pursued by the controller**
+  - FIXME
 
 ## Description of of the lawfulness of processing
 FIXME
