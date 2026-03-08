@@ -34,18 +34,31 @@ If the samples did not reveal any problems, the donated blood can then be delive
 
 
 ## Description of the process activity
-FIXME
-- The types and amount of personal data being processed
--- Identification and contact data of the donor
--- Appointment data
--- Questionnaire answers
--- Health data and medical measurements
--- Laboratory test results
--- Donation and traceability data
-- The circumstances of the processing
-  
-- How long the personal data will be retained,
-- How the personal data will be collected, stored, accessed, shared, and ultimately destroyed 
+- **Types and amount of personal data being processed**
+  - Personal data includes identification and contact data of the donor (Name, Address, Phonenumber)
+  - Appointment data
+  - Questionnaire answers
+  - Health records and medical measurements
+  - Laboratory test results
+  - Donation and traceability data
+
+- **Circumstances of the processing**
+  - Personal data is processed before, during, and after the donation process
+  - Processing takes place via the mobile app, at the donation venue, and on Red Cross servers
+  - Medical staff process the data for donor assessment and donation safety
+  - Some information may also be processed in paper form
+
+- **How long the personal data will be retained**
+  - Personal data is retained as long as necessary for appointment handling and donor assessment
+  - Legally required documentation is retained according to Austrian blood safety law
+  - Traceability-relevant data may need to be retained for up to 30 years
+
+- **How the personal data will be collected, stored, accessed, shared, and ultimately destroyed**
+  - Personal data is collected from the donor via the app and during the on-site examination
+  - Personal data is stored on the donor’s device, on Red Cross servers, and partly in paper records
+  - Access is limited to authorized medical and administrative personnel
+  - Personal data is shared only where necessary for testing, documentation, traceability, and legal compliance
+  - Personal data is deleted or destroyed securely once it is no longer required by law or operations 
 
 ## Description of  purpose(s):
 FIXME
