@@ -35,8 +35,15 @@ If the samples did not reveal any problems, the donated blood can then be delive
 
 ## Description of the process activity
 FIXME
-- The types and amount of personal data being processed,
-- The circumstances of the processing,
+- The types and amount of personal data being processed
+-- Identification and contact data of the donor
+-- Appointment data
+-- Questionnaire answers
+-- Health data and medical measurements
+-- Laboratory test results
+-- Donation and traceability data
+- The circumstances of the processing
+  
 - How long the personal data will be retained,
 - How the personal data will be collected, stored, accessed, shared, and ultimately destroyed 
 
