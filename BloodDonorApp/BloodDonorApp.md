@@ -120,9 +120,9 @@ FIXME
 - A re-evaluation of the risks, considering the measures and methods envisaged, including the residual severity
 
 ## References
-https://www.jusline.at/gesetz/bsg
-https://www.jusline.at/gesetz/bsv
-https://www.jusline.at/gesetz/bsv/paragraf/3
-https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11
-https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10
+- https://www.jusline.at/gesetz/bsg
+- https://www.jusline.at/gesetz/bsv
+- https://www.jusline.at/gesetz/bsv/paragraf/3
+- https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11
+- https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10
 
