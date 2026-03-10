@@ -29,7 +29,7 @@ The process of blood donation is roughly as follows: A prospect donor uses the B
 At the appointment date, the prospect donor visits the site, where the transmitted questionnaire can be printed out to a paper form (2). The heart rate, blood pressure and the hemoglobin level (and, unless already provided in a blood donor card, the blood group and Rhesus factor) of the prospect donor are taken  and written down in the paper form.
 
 <p align="center">
-  <img src="Workflow.drawio.png" alt="Workflow.drawio.png">
+  <img src="../Workflow.drawio.png" alt="Workflow.drawio.png">
 </p>
 
 If the measured values are within the required boundaries, the donor then visits a doctor who checks the questionnaire and asks the prospect donor additional health related questions. Also, the prospect donor may ask questions, e.g. related to the blood donation process. If the doctor comes to the conclusion that the prospect donor is fit enough and the questionnaire did not reveal any issues preventing a donation, the prospect donor is admitted to the blood donation process (4), otherwise the prospect donor cannot donate blood in the moment and is asked to visit the venue in a few weeks e.g. after enough time after a recently suffered cold has elapsed (3).
@@ -68,62 +68,6 @@ If the samples did not reveal any problems, the donated blood can then be delive
 - It also includes long-term storage and medical assessment in a structured workflow.
 - Therefore, the processing is likely to result in a high risk to the rights and freedoms of the data subjects.
 - For that reason, carrying out a DPIA is necessary.
-
-## Description of the process activity
-- **Types and amount of personal data being processed**
-  - Personal data includes identification and contact data of the donor (name, 
-  address, phone number)
-  - Appointment data
-  - Questionnaire answers
-  - Health records and medical measurements
-  - Laboratory test results
-  - Donation and traceability data
-
-- **Circumstances of the processing**
-  - Personal data is processed before, during, and after the donation process
-  - Processing takes place via the mobile app, at the donation venue, and on Red Cross servers
-  - Medical staff process the data for donor assessment and donation safety
-  - Some information may also be processed in paper form
-
-- **How long the personal data will be retained**
-  - Personal data is retained as long as necessary for appointment handling and donor assessment
-  - Legally required documentation is retained according to Austrian blood safety law
-  - Traceability-relevant data may need to be retained for up to 30 years
-
-- **How the personal data will be collected, stored, accessed, shared, and ultimately destroyed**
-  - Personal data is collected from the donor via the app and during the on-site examination
-  - Personal data is stored on the donor’s device, on Red Cross servers, and partly in paper records
-  - Access is limited to authorized medical and administrative personnel
-  - Personal data is shared only where necessary for testing, documentation, traceability, and legal compliance
-  - Personal data is deleted or destroyed securely once it is no longer required by law or operations 
-
-## Description of  purpose(s):
-
-- **Purposes for which personal data is being processed in relation to the necessity and proportionality of the processing operations**
-  - Appointment data is needed for scheduling and managing appointments with donors.
-  - Questionnaire answers and health data are needed for the medical staff to evaluate whether a prospective donor is eligible to donate blood and whether the donation is safe for both donor and recipient.
-  - Laboratory results and medical measurements are necessary to ensure that donated blood is safe for transfusion and complies with applicable medical standards.
-  - Donation and traceability data is needed becuase full tracability of the blood transfusion chain is required by Austrian Law
-  - Personal data is processed and retained to fulfill legal obligations under the Austrian Blutsicherheitsgesetz (BSG) and Blutspendeverordnung (BSV)
-
-- **Details of the legal basis, such as the legitimate interest pursued by the controller**
-  - FIXME
-
-## Description of of the lawfulness of processing
-FIXME
-- How the processing complies with any relevant privacy or data protection principles such as purpose limitation, minimization 
-
-## Identification of risks to the rights and freedoms of individuals (data subjects)
-FIXME
-- Identify the origin, nature and severity of risks caused by the processing 
-
-## Description of measures or methods to mitigate risks, both existing and planned
-FIXME
-- Detailed information on the technical and organizational measures or methods envisaged to address the risks 
-
-## Determination of the residual risks:
-FIXME
-- A re-evaluation of the risks, considering the measures and methods envisaged, including the residual severity
 
 ## References
 - [https://www.jusline.at/gesetz/bsg](https://www.jusline.at/gesetz/bsg)
