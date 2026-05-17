@@ -69,12 +69,14 @@ If the samples did not reveal any problems, the donated blood can then be delive
 - Therefore, the processing is likely to result in a high risk to the rights and freedoms of the data subjects.
 - For that reason, carrying out a DPIA is necessary.
 
+# DPIA
+
 ## Description of the process activity
 - **Types and amount of personal data being processed**
   - Personal data includes identification and contact data of the donor (name, 
-  address, phone number)
+  address, phone number, e-mail address, date of birth)
   - Appointment data
-  - Questionnaire answers
+  - Questionnaire answers (medical conditions, weight, pregnancy, alcohol/drug habits, sexual acitivity)
   - Health records and medical measurements
   - Laboratory test results
   - Donation and traceability data
@@ -87,7 +89,7 @@ If the samples did not reveal any problems, the donated blood can then be delive
 
 - **How long the personal data will be retained**
   - Personal data is retained as long as necessary for appointment handling and donor assessment
-  - Legally required documentation is retained according to Austrian blood safety law
+  - Legally required documentation is retained according to Austrian blood safety law (15 years)
   - Traceability-relevant data may need to be retained for up to 30 years
 
 - **How the personal data will be collected, stored, accessed, shared, and ultimately destroyed**
@@ -103,15 +105,29 @@ If the samples did not reveal any problems, the donated blood can then be delive
   - Appointment data is needed for scheduling and managing appointments with donors.
   - Questionnaire answers and health data are needed for the medical staff to evaluate whether a prospective donor is eligible to donate blood and whether the donation is safe for both donor and recipient.
   - Laboratory results and medical measurements are necessary to ensure that donated blood is safe for transfusion and complies with applicable medical standards.
-  - Donation and traceability data is needed becuase full tracability of the blood transfusion chain is required by Austrian Law
+  - Donation and traceability data is needed because full tracability of the blood transfusion chain is required by Austrian Law
   - Personal data is processed and retained to fulfill legal obligations under the Austrian Blutsicherheitsgesetz (BSG) and Blutspendeverordnung (BSV)
 
 - **Details of the legal basis, such as the legitimate interest pursued by the controller**
-  - FIXME
+  - GDPR article 6 (a) consent
+  - GDPR article 6 (c) processing legally neccessary due to "Blutsicherheitsgesetz"
+  - GDPR article 6 (d) vital interest of another person
+  regarding special categories of personal data:
+  - GDPR article 9 (2)(a) consent
+  - GDPR article 9 (2)(c) vital interest of another person
+  - GDPR article 9 (2)(h) purpose within health sector
+   - GDPR article 9 (2)(i) reasons of public interest in public health
+  related laws
+  - Blutsicherheitsgesetz §11 (5)
+
 
 ## Description of of the lawfulness of processing
-FIXME
-- How the processing complies with any relevant privacy or data protection principles such as purpose limitation, minimization 
+- transparency towards the subject is achieved by clearly communicating the exact purposes and nature of the processing via the data protection declaration that is shown to the user before the questionnaire
+- The gathered data is not used for any other purpose than the ones listed above
+- The questionnaire doesn't contain any questions that are not strictly necessary to fullfill legal and medical requirements
+- To ensure accuracy of the data, there is a donor review process
+- A retention schedule by data category is implemented. Abandoned questionnaire drafts get automatically deleted
+- Measures such as encryption, access control and logging are taken to fullfill the requirement of integrity and confidentiality
 
 ## Identification of risks to the rights and freedoms of individuals (data subjects)
 FIXME
@@ -131,4 +147,5 @@ FIXME
 - [https://www.jusline.at/gesetz/bsv/paragraf/3](https://www.jusline.at/gesetz/bsv/paragraf/3)
 - [https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11)
 - [https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10)
+- https://dsgvo-gesetz.de/art-6-dsgvo/
 
