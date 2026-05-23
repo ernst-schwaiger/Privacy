@@ -72,6 +72,9 @@ If the samples did not reveal any problems, the donated blood can then be delive
 # DPIA
 
 ## Description of the process activity
+The app allows prospective blood donors to arrange an appointment and fill out the donor questionnaire before visiting the donation venue. The questionnaire and appointment data are transmitted to a server operated by the Red Cross. At the venue, the questionnaire may be printed and reviewed by medical staff. Additional medical measurements are taken on site, including heart rate, blood pressure, hemoglobin level, and, where necessary, blood group and Rhesus factor. A doctor then reviews the questionnaire and decides whether the person may donate blood.
+During or after the donation process, blood samples are tested for infections such as HIV and hepatitis B/C. If the blood is suitable and is administered to a patient, the questionnaire, lab results, and traceability-relevant documentation are stored long-term
+
 - **Types and amount of personal data being processed**
   - Personal data includes identification and contact data of the donor (name, 
   address, phone number, e-mail address, date of birth)
