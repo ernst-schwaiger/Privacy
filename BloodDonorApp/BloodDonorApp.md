@@ -133,16 +133,42 @@ During or after the donation process, blood samples are tested for infections su
 - Measures such as encryption, access control and logging are taken to fullfill the requirement of integrity and confidentiality
 
 ## Identification of risks to the rights and freedoms of individuals (data subjects)
-FIXME
-- Identify the origin, nature and severity of risks caused by the processing 
+
+|**Item**|**Describe source of risk and nature of potential impact on individuals.** Include associated compliance and corporate risks as necessary. |**Likelihood of harm**|**Severity of harm**|**Overall risk**|
+|-|-|-|-|-|
+|1|Rogue Blood donor sends appointment request to donate blood using a false identity|Possible|Low|Low|
+|2|Questionnaire stored in the app is read by unauthorized personnel, e.g. from a stolen or unsupervised cellphone|Almost Certain|Severe|High|
+|3|Questionnaire data is stolen/altered while being transferred from the cell phone to the Server|Possible|Severe|High|
+|4|Server is compromised by a hacker attack|Possible|Very Severe|Very High|
+|5|Server hardware gets stolen|Possible|Very Severe|Very High|
+|6|Attacker obtains questionnaire of a prospect blood donor by imposing as the donor|Unlikely|Severe|Medium|
+|7|Rogue staff member steals or alters questionnaire data from the server|Remote|Very Severe|High|
+|8|Rogue member of app development team adds backdoor to server software|Remote|Very Severe|High|
+|9|Malicious Blood donor app sends data to unauthorized personnel|Possible|High|Medium|
+FIXME: Also include attacks on the long term storage?
 
 ## Description of measures or methods to mitigate risks, both existing and planned
-FIXME
-- Detailed information on the technical and organizational measures or methods envisaged to address the risks 
+
+|**Item**|**Options to reduce or eliminate risk**|**Effect on risk**|**Residual Risk**|
+|-|-|-|-|
+|1|Blood donor must authenticate at the venue using an official document, e.g. passport, drivers license|Reduced|Low|
+|2|Questionnaire is stored encrypted on the device, access to app only via MFA|Reduced|Low|
+|3|Questionnaire data is encrypted before transmission to server|Reduced|Low|
+|4|**Availability**: Provide multiple servers, use load balancer. **Confidentiality/Integrity**: Put server behind firewall, perform security updates regularly, server implementation according to the Secure Software Development Lifecycle. Questionnaire data is deleted immediately after blood donation process finished, or if the donor did not show up at the appointment|Reduced|Medium|
+|5|Server hardware is put in a dedicatd windowless room with security door|Reduced|Low|
+|6|Prospect blood donors must authenticate themselves using official documents before the questionnaire is printed out|Reduced|Low|
+|7|Access to the questionnaire data is logged; server software does not allow to change questionnaire data|Reduced|Low|
+|8|No code change enters the main branch of the repo without code review |Reduced|Medium|
+|9|Provide app only via official app repositories. Warn users to download the app elsewhere |Reduced|Low|
 
 ## Determination of the residual risks:
-FIXME
-- A re-evaluation of the risks, considering the measures and methods envisaged, including the residual severity
+
+See table above. 
+FIXME: shall we describe the items in more detail, instead of just in a table?
+FIXME: The DFA also contains additional items, like:
+- statements regarding necessity, commensurability
+- Interview affected persons
+- Consultation of Data Protection Officer/DPO
 
 ## References
 - [https://www.jusline.at/gesetz/bsg](https://www.jusline.at/gesetz/bsg)
