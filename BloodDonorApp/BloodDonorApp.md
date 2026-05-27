@@ -175,6 +175,18 @@ FIXME: The DFA also contains additional items, like:
 - Interview affected persons
 - Consultation of Data Protection Officer/DPO
 
+## Necessity and proportionality
+
+The processing of personal data is necessary to organize blood donation appointments, assess donor eligibility, protect donor and recipient safety, and fulfil legal documentation and traceability obligations.
+
+The app reduces waiting times at the donation venue by allowing donors to complete the questionnaire before arrival. However, the processing is limited to data that is necessary for appointment handling, medical assessment, blood safety, and legal documentation.
+
+The questionnaire does not collect data for unrelated purposes. Abandoned questionnaire drafts are deleted automatically after a defined period. Data that is no longer required for the donation process or legal retention obligations is securely deleted or destroyed.
+
+The processing is therefore considered proportionate, provided that data minimization, strict access control, encryption, retention limits, and secure deletion are implemented as described.
+
+
+
 ## References
 - [https://www.jusline.at/gesetz/bsg](https://www.jusline.at/gesetz/bsg)
 - [https://www.jusline.at/gesetz/bsv](https://www.jusline.at/gesetz/bsv)
