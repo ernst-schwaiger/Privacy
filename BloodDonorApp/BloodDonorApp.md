@@ -145,6 +145,9 @@ During or after the donation process, blood samples are tested for infections su
 |7|Rogue staff member steals or alters questionnaire data from the server|Remote|Very Severe|High|
 |8|Rogue member of app development team adds backdoor to server software|Remote|Very Severe|High|
 |9|Malicious Blood donor app sends data to unauthorized personnel|Possible|High|Medium|
+|10|Long-term archive is compromised by an external attacker. Since questionnaire data, lab results and traceability data may be stored for up to 30 years, a breach could expose highly sensitive health data of many donors.|Possible|Very Severe|Very High|
+|11|Unauthorized internal access to long-term records by staff with excessive privileges. This could lead to disclosure of old questionnaire data, lab results or donation records|Remote|Very Severe|High|
+
 FIXME: Also include attacks on the long term storage?
 
 ## Description of measures or methods to mitigate risks, both existing and planned
@@ -160,6 +163,8 @@ FIXME: Also include attacks on the long term storage?
 |7|Access to the questionnaire data is logged; server software does not allow to change questionnaire data|Reduced|Low|
 |8|No code change enters the main branch of the repo without code review |Reduced|Medium|
 |9|Provide app only via official app repositories. Warn users to download the app elsewhere |Reduced|Low|
+|10|Encrypt long-term archive, use strict role-based access control, audit logging, regular penetration tests and secure backup procedures |Reduced|Medium|
+|11|Apply least-privilege access, periodic access reviews, logging of all archive access and disciplinary procedures for misuse |Reduced|Low|
 
 ## Determination of the residual risks:
 
