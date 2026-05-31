@@ -35,7 +35,7 @@ The process of blood donation is roughly as follows: A prospect donor uses the B
 At the appointment date, the prospect donor visits the site and prints out the questionnaire to paper. A nurse then requests the blood donor to identify by showing a legal document with photo, like passport or a drivers license. The heart rate, blood pressure and the hemoglobin level (and, unless already provided in a blood donor card, the blood group and Rhesus factor) of the prospect donor are then taken and written down in the paper form.
 
 <p align="center">
-  <img src="Workflow.drawio.png" alt="Workflow.drawio.png">
+  <img src="DataFlow.drawio.png" alt="Workflow.drawio.png">
 </p>
 
 If the measured values are within the required boundaries, the donor then visits a doctor who checks the questionnaire and asks the prospect donor additional health related questions. Also, the prospect donor may ask questions, e.g. related to the blood donation process. If the doctor concludes that the prospect donor is fit enough and the questionnaire did not reveal any issues preventing a donation, the prospect donor is admitted to the blood donation process (4), otherwise the prospect donor cannot donate blood in the moment and is asked to visit the venue in a few weeks e.g. after enough time after a recently suffered cold has elapsed (3).
@@ -190,6 +190,18 @@ A counter measure against this type of attack could be to encrypt the QR code da
 ### Blood Donor Uses the Identity of Another Person
 
 This scenario is assumed to be virtually impossible; on the one hand side, the Red Cross does not compensate for blood donations, other than offering snacks and drinks, which rules out the possibility to donate blood for monetary gain. Moreover, the authenticity of a blood donor is always checked by the personnel at the venue, and must be done using a legal document with photo.
+
+## Necessity and proportionality
+
+The processing of personal data is necessary to organize blood donation appointments, assess donor eligibility, protect donor and recipient safety, and fulfil legal documentation and traceability obligations.
+
+The app reduces waiting times at the donation venue by allowing donors to complete the questionnaire before arrival. However, the processing is limited to data that is necessary for appointment handling, medical assessment, blood safety, and legal documentation.
+
+The questionnaire does not collect data for unrelated purposes. Abandoned questionnaire drafts are deleted automatically after a defined period. Data that is no longer required for the donation process or legal retention obligations is securely deleted or destroyed.
+
+The processing is therefore considered proportionate, provided that data minimization, strict access control, encryption, retention limits, and secure deletion are implemented as described.
+
+
 
 ## References
 - [https://www.jusline.at/gesetz/bsg](https://www.jusline.at/gesetz/bsg)
