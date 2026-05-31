@@ -13,26 +13,32 @@ Currently, prospect donors have to fill out a paper questionnaire which is evalu
 
 When the prospect donor is admitted to donate blood, and the donated blood was administered to a patient, the questionnaire has to be kept by the Red Cross for at least 30 years, according to Austrian Law: Blutsicherheitsgesetz §11 (5).
 
-In order to reduce waiting times for prospect donors, an app shall be implemented in which an appointment with the Red Cross venue can be arranged. Moreover the app shall allow the user to fill out the questionnaire upfront and send it to the venue along with the agreed appointment data to a dedicated Server. The doctor can then print out and evaluate the questionnaire, and on the doctors discretion, admit the donor to the donation.
+As prospect donors can visit the Red Cross venue at opening hours without upfront reservation, it frequently happens that they arrive at the same time which may lead to unnecessary waiting times, while an hour earlier or later sufficient resources would have been available for conducting the donation process quickly.
 
-As the app allows the blood donor to interrupt the filling out of the questionnaire, the already answered questions have to be stored on the cell phone in such a way that they can't be read by a another person without consent of the donor. Once the filled out questionnaire arrives at the server, care must be taken that no unauthorized personnel can access that data.
+In order to reduce waiting times for prospect donors at the Red Cross venue, and to give the personnel an overview about how many donors will visit the site at a certain period in time, an app shall be implemented for iOS and Android in which an appointment with the Red Cross venue can be arranged.
 
-After a successful donation, and if the blood actually got administered to a patient, a Record of that questionnaire must be kept for 30 years according to the Austrian Law.
+For blood donors, the process of filling out the questionnaire is the first step in the blood donation process. In order to make it more convenient for the donor and to save time, the app shall allow the user to fill it out at home.
+
+The filled out questionnaire is then printed out at the venue, and the blood donation process continues in the same way as if the prospect donor had filled out the questionnaire at the venue.
+
+After a successful donation, and if the blood actually got administered to a patient, a record of that questionnaire must be kept for 30 years according to the Austrian Law.
 
 Austrian law regulates how blood donations are to be conducted in the [Blutspendeverordnung](https://www.jusline.at/gesetz/bsv)(BSV) and in the [Blutsicherheitsgesetz](https://www.jusline.at/gesetz/bsg)(BSG).
 
 >Blutsicherheitsgesetz §11 (5): 
 >(5)Die Dokumentation ist durch mindestens fünfzehn Jahre - jene Teile, die für die lückenlose Nachvollziehbarkeit der Transfusionskette unerlässlich sind durch mindestens dreißig Jahre - zur jederzeitigen Einsichtnahme durch die nach diesem Bundesgesetz zuständigen Kontrollorgane bereitzuhalten.
 
-The process of blood donation is roughly as follows: A prospect donor uses the BloodDonorApp to arrange an appointment the Red Cross venue and to fill out the questionnaire. Both appointment and questionnaire are transmitted to a Server maintained by the Red Cross (1).
+The long term storage of the questionnaire, however, is not in the scope of the BloodDonorApp.
 
-At the appointment date, the prospect donor visits the site, where the transmitted questionnaire can be printed out to a paper form (2). The heart rate, blood pressure and the hemoglobin level (and, unless already provided in a blood donor card, the blood group and Rhesus factor) of the prospect donor are taken  and written down in the paper form.
+The process of blood donation is roughly as follows: A prospect donor uses the BloodDonorApp to arrange an appointment the Red Cross venue and to fill out the questionnaire. The appointment data is transmitted to a Server maintained by the Red Cross (1).
+
+At the appointment date, the prospect donor visits the site and prints out the questionnaire to paper. A nurse then requests the blood donor to identify by showing a legal document with photo, like passport or a drivers license. The heart rate, blood pressure and the hemoglobin level (and, unless already provided in a blood donor card, the blood group and Rhesus factor) of the prospect donor are then taken and written down in the paper form.
 
 <p align="center">
   <img src="Workflow.drawio.png" alt="Workflow.drawio.png">
 </p>
 
-If the measured values are within the required boundaries, the donor then visits a doctor who checks the questionnaire and asks the prospect donor additional health related questions. Also, the prospect donor may ask questions, e.g. related to the blood donation process. If the doctor comes to the conclusion that the prospect donor is fit enough and the questionnaire did not reveal any issues preventing a donation, the prospect donor is admitted to the blood donation process (4), otherwise the prospect donor cannot donate blood in the moment and is asked to visit the venue in a few weeks e.g. after enough time after a recently suffered cold has elapsed (3).
+If the measured values are within the required boundaries, the donor then visits a doctor who checks the questionnaire and asks the prospect donor additional health related questions. Also, the prospect donor may ask questions, e.g. related to the blood donation process. If the doctor concludes that the prospect donor is fit enough and the questionnaire did not reveal any issues preventing a donation, the prospect donor is admitted to the blood donation process (4), otherwise the prospect donor cannot donate blood in the moment and is asked to visit the venue in a few weeks e.g. after enough time after a recently suffered cold has elapsed (3).
 
 During the donation process, additional blood samples are taken for the screening of the blood; the samples are, for instance, checked for HIV, Hepatitis B/C.
 
@@ -40,135 +46,150 @@ If the samples did not reveal any problems, the donated blood can then be delive
 
 ## Consideration about collection, use, disclosure and storage of personal data
 
-- **Description of the personal data**
-  - Name and contact details
-  - Date of birth
-  - Appointment data
-  - Questionnaire answers
-  - Health data
-  - Medical measurements
-  - Laboratory test results
-  - Donation and traceability data
+### Personal User Data
 
-- **Key privacy elements: purpose for which personal data is collected, processed, disclosed**
-  - Personal data is collected to organize appointments and assess donor eligibility.
-  - Health-related data is processed to protect donor health and ensure the safety of donated blood.
-  - Personal data may be disclosed internally to authorized medical staff and, where necessary, to laboratories or supervisory authorities.
-  - Personal data is stored to document the donation process and to comply with legal traceability and retention obligations.
+The BloodDonorApp permanently stores the following personal user data:
+- First name
+- Last name
+- Date of birth
+- Sex
+- Address
+- Phone number
+- email address
 
-- **Nature and sensitivity of the personal data**
-  - The project processes sensitive personal data.
-  - This includes health data and possibly highly personal data from the questionnaire like medication, allergies, drinking habits, etc.
-  - The data requires a high level of confidentiality and protection because unauthorized access could seriously affect the privacy of the donor.
+### Appointment Data
+
+The appointment data contains the address of the venue and the planned time of arrival which the user selects during the reservation process.
+
+### Questionnaire Data
+
+The questionnaire consists of 38 questions, most of them can be answered with either yes or no. The questions fall into one of the following categories:
+
+- self-assessment of health
+- blood donations in the past
+- recent pregnancy
+- medications taken in the moment or in the recent past
+- undergone medical interventions
+- recently received vaccinations
+- recent infections, or symptoms that may indicate infections
+- chronic or hereditary diseases
+- actions involving the risk of infections, e.g. sexual conduct, taking recreational drugs, piercings, ...
+- allergies
+
+Several clinical parameters, like blood pressure and heart rate taken at the venue and are therefore not part of the questionnaire.
+
+### Purpose of the Collected Data
+
+The users personal data identifies the donor and allows Red Cross organization to contact him or her. It is stored by the application so it the user does not have to be enter it over and over again for each new arranged appointment.
+
+The appointment data is stored to remind the user of it when it is due. It also gives the personnel at the Red Cross an overview about how many donors will visit the venues at a certain point in time.
+
+The questionnaire data is required to protect the donor and the patient who will receive the donated blood. It us used to identify prospect donors with health conditions that make the blood extraction process to risky for them. The questionnaire data also identifies donors the blood of which cannot be administered to patents without harming their health, for instance if there is a risk of transmitting a disease via the donated blood.
+
+Moreover, the personal data of the donor and the questionnaire are part of the documentation which the Austrian [Blutspendeverordnung](https://www.jusline.at/gesetz/bsv)(BSV) and the [Blutsicherheitsgesetz](https://www.jusline.at/gesetz/bsg)(BSG) to be archived for several years.
+
+### Nature and Sensitivity of the Collected Data
+
+The personal user data stored in the app, as well as the content of the questionnaire are "personal data" in the sense of article 4 paragraph 1 of the GDPR, therefore the GDPR applies.
+
+In addition to that, the answers given in the questionnaire are health data, which are "special categories of personal data" as described in [Article 9 of the GDPR](https://gdpr-info.eu/art-9-gdpr/). Paragraph 1 prohibits their processing in general, however paragraph 2 allows it if one or more explicitly stated conditions apply. For the purpose of donating blood, the conditions listed in Art 9 paragraph 2 lit (a), (g), (h), and (i) apply.
+
+- (a) the data subject has given explicit consent to the processing of the data
+- (g) processing is necessary for substantial public interest (i.e. saving peoples lives using blood transfusions while avoiding health risks for donor and recipient)
+- (h) processing is necessary for medical purposes
+- (i) processing is necessary for reasons of public interest in the area of public health
 
 ## Conclusion: Is a DPIA necessary?
 
-- **A DPIA is necessary.**
-- The project involves the processing of sensitive personal data, especially health data.
-- It also includes long-term storage and medical assessment in a structured workflow.
-- Therefore, the processing is likely to result in a high risk to the rights and freedoms of the data subjects.
-- For that reason, carrying out a DPIA is necessary.
+The project involves the processing of sensitive personal data, especially health data. Therefore, the processing is likely to result in a high risk to the rights and freedoms of the data subjects. For that reason, carrying out a DPIA is necessary.
 
-# DPIA
+## Detailed Description of the Process Activity
 
-## Description of the process activity
-The app allows prospective blood donors to arrange an appointment and fill out the donor questionnaire before visiting the donation venue. The questionnaire and appointment data are transmitted to a server operated by the Red Cross. At the venue, the questionnaire may be printed and reviewed by medical staff. Additional medical measurements are taken on site, including heart rate, blood pressure, hemoglobin level, and, where necessary, blood group and Rhesus factor. A doctor then reviews the questionnaire and decides whether the person may donate blood.
-During or after the donation process, blood samples are tested for infections such as HIV and hepatitis B/C. If the blood is suitable and is administered to a patient, the questionnaire, lab results, and traceability-relevant documentation are stored long-term
+A prospect blood donor installs the BloodDonorApp on the cellphone and enters the personal user data. For arranging an appointment the user opens the app and selects an available time slot at the desired venue. The user may change the appointment date or cancel the appointment altogether, for instance because of a suffered infection.
 
-- **Types and amount of personal data being processed**
-  - Personal data includes identification and contact data of the donor (name, 
-  address, phone number, e-mail address, date of birth)
-  - Appointment data
-  - Questionnaire answers (medical conditions, weight, pregnancy, alcohol/drug habits, sexual acitivity)
-  - Health records and medical measurements
-  - Laboratory test results
-  - Donation and traceability data
+One day before an arranged appointment, the app sends reminder to the user and suggests to fill out the questionnaire. The user is also informed that this is an optional step, alternatively the questionnaire can be filled out at the venue using pen and paper. The user can decide to fill it out immediately, decline, or request to be reminded later. The user also may interrupt the filling out and resume at a later point in time. 
 
-- **Circumstances of the processing**
-  - Personal data is processed before, during, and after the donation process
-  - Processing takes place via the mobile app, at the donation venue, and on Red Cross servers
-  - Medical staff process the data for donor assessment and donation safety
-  - Some information may also be processed in paper form
+Provided the user has filled out the questionnaire upfront, the app can be opened to present a QR code containing the users personal data and the filled out questionnaire to a QR code reader device. The device then prints out the questionnaire in paper form which the user picks up and proceeds to the nurse. After the questionnaire was printed out successfully, the user confirms the deletion of the questionnaire data on the app.
 
-- **How long the personal data will be retained**
-  - Personal data is retained as long as necessary for appointment handling and donor assessment
-  - Legally required documentation is retained according to Austrian blood safety law (15 years)
-  - Traceability-relevant data may need to be retained for up to 30 years
+The app stores all of its data in situ in encrypted form. The app requires an authentication before disclosing its data to the user, e.g. via a password, a fingerprint or facial scan. For arranging the appointment, the app communicates with the Red Cross server via HTTPS/TLS.
 
-- **How the personal data will be collected, stored, accessed, shared, and ultimately destroyed**
-  - Personal data is collected from the donor via the app and during the on-site examination
-  - Personal data is stored on the donor’s device, on Red Cross servers, and partly in paper records
-  - Access is limited to authorized medical and administrative personnel
-  - Personal data is shared only where necessary for testing, documentation, traceability, and legal compliance
-  - Personal data is deleted or destroyed securely once it is no longer required by law or operations 
+The data in the QR is encoded but not encrypted. Encryption in this scenario does not increase the security of the donors health data since the printed out form is in plain text as well. Prospect donors are asked to have their questionnaires always with them and not letting them lying around openly.
 
-## Description of  purpose(s):
-
-- **Purposes for which personal data is being processed in relation to the necessity and proportionality of the processing operations**
-  - Appointment data is needed for scheduling and managing appointments with donors.
-  - Questionnaire answers and health data are needed for the medical staff to evaluate whether a prospective donor is eligible to donate blood and whether the donation is safe for both donor and recipient.
-  - Laboratory results and medical measurements are necessary to ensure that donated blood is safe for transfusion and complies with applicable medical standards.
-  - Donation and traceability data is needed because full tracability of the blood transfusion chain is required by Austrian Law
-  - Personal data is processed and retained to fulfill legal obligations under the Austrian Blutsicherheitsgesetz (BSG) and Blutspendeverordnung (BSV)
-
-- **Details of the legal basis, such as the legitimate interest pursued by the controller**
-  - GDPR article 6 (a) consent
-  - GDPR article 6 (c) processing legally neccessary due to "Blutsicherheitsgesetz"
-  - GDPR article 6 (d) vital interest of another person
-  regarding special categories of personal data:
-  - GDPR article 9 (2)(a) consent
-  - GDPR article 9 (2)(c) vital interest of another person
-  - GDPR article 9 (2)(h) purpose within health sector
-   - GDPR article 9 (2)(i) reasons of public interest in public health
-  related laws
-  - Blutsicherheitsgesetz §11 (5)
-
+The app minimizes the time period in which questionnaire data is stored on the cell phone. On the one hand this is for practical reasons: If some event happens which is relevant for the questionnaire (e.g. the user suffers an infection or illness), the pre-filled questionnaire would not contain correct data any more. On the other hand, this minimizes the period in time in which the app stores health data of the user, thereby reducing the likelihood of a data breach.
 
 ## Description of of the lawfulness of processing
-- transparency towards the subject is achieved by clearly communicating the exact purposes and nature of the processing via the data protection declaration that is shown to the user before the questionnaire
-- The gathered data is not used for any other purpose than the ones listed above
-- The questionnaire doesn't contain any questions that are not strictly necessary to fullfill legal and medical requirements
-- To ensure accuracy of the data, there is a donor review process
-- A retention schedule by data category is implemented. Abandoned questionnaire drafts get automatically deleted
-- Measures such as encryption, access control and logging are taken to fullfill the requirement of integrity and confidentiality
+
+Transparency towards the subject is achieved by clearly communicating the exact purposes and nature of the processing via the data protection declaration that is shown to the user before the questionnaire. Moreover, the user is also informed that the form can alternatively be filled out at the venue.
+
+The collected data is only used for the purpose of the blood donation process, the questionnaire of the app doesn't contain any questions that are not strictly necessary to fulfill legal and medical requirements.
+
+The app deletes the questionnaire data immediately after it is not required any more:
+
+- After the user prints out the questionnaire at the venue
+- After the user cancels the appointment
+- One hour after the appointment date if the questionnaire has not been printed out
 
 ## Identification of risks to the rights and freedoms of individuals (data subjects)
 
 |**Item**|**Describe source of risk and nature of potential impact on individuals.** Include associated compliance and corporate risks as necessary. |**Likelihood of harm**|**Severity of harm**|**Overall risk**|
 |-|-|-|-|-|
-|1|Rogue Blood donor sends appointment request to donate blood using a false identity|Possible|Low|Low|
-|2|Questionnaire stored in the app is read by unauthorized personnel, e.g. from a stolen or unsupervised cellphone|Almost Certain|Severe|High|
-|3|Questionnaire data is stolen/altered while being transferred from the cell phone to the Server|Possible|Severe|High|
-|4|Server is compromised by a hacker attack|Possible|Very Severe|Very High|
-|5|Server hardware gets stolen|Possible|Very Severe|Very High|
-|6|Attacker obtains questionnaire of a prospect blood donor by imposing as the donor|Unlikely|Severe|Medium|
-|7|Rogue staff member steals or alters questionnaire data from the server|Remote|Very Severe|High|
-|8|Rogue member of app development team adds backdoor to server software|Remote|Very Severe|High|
-|9|Malicious Blood donor app sends data to unauthorized personnel|Possible|High|Medium|
-FIXME: Also include attacks on the long term storage?
+|1|Malicious fake BloodDonor app sends data to unauthorized personnel|Possible|Very Severe|High|
+|2|Backdoor injection during app development|Possible|Very Severe|High|
+|3|Compromised QR Code reader|Possible|Very Severe|High|
+|4|Questionnaire stored in the app is read by unauthorized persons, e.g. from a stolen or unsupervised cellphone|Almost Certain|Severe|High|
+|5|Skimmer Device installed|Virtually impossible|Very Severe|Medium|
+|6|Blood donor uses the identity of another person|Virtually impossible|Low|Very Low|
 
 ## Description of measures or methods to mitigate risks, both existing and planned
 
-|**Item**|**Options to reduce or eliminate risk**|**Effect on risk**|**Residual Risk**|
-|-|-|-|-|
-|1|Blood donor must authenticate at the venue using an official document, e.g. passport, drivers license|Reduced|Low|
-|2|Questionnaire is stored encrypted on the device, access to app only via MFA|Reduced|Low|
-|3|Questionnaire data is encrypted before transmission to server|Reduced|Low|
-|4|**Availability**: Provide multiple servers, use load balancer. **Confidentiality/Integrity**: Put server behind firewall, perform security updates regularly, server implementation according to the Secure Software Development Lifecycle. Questionnaire data is deleted immediately after blood donation process finished, or if the donor did not show up at the appointment|Reduced|Medium|
-|5|Server hardware is put in a dedicatd windowless room with security door|Reduced|Low|
-|6|Prospect blood donors must authenticate themselves using official documents before the questionnaire is printed out|Reduced|Low|
-|7|Access to the questionnaire data is logged; server software does not allow to change questionnaire data|Reduced|Low|
-|8|No code change enters the main branch of the repo without code review |Reduced|Medium|
-|9|Provide app only via official app repositories. Warn users to download the app elsewhere |Reduced|Low|
+### Malicious Fake BloodDonorApp
+
+If the users were using a malicious app that mimics the BloodDonorApp, these apps could secretly collect the users personal and health data, infiltrate it, then use it for criminal purposes, e.g. blackmailing.
+
+The Austrian Red Cross assumes that the likelihood that a malicious fake blood donor app can be downloaded via one of the official iOS/Android app stores is very remote since they have measures in place that prevent that malicious apps enter their store, e.g required authentication of the software developers, internal static and dynamic code checkers.
+
+As Android .apk files still can be downloaded from anywhere and installed onto an Android device, the Red Cross assumes that this risk must be mitigated. For that purpose, the app shall get an attestation feature in the future (e.g. built on top of Androids Hardware Attestation API) by which in can prove that it is genuine.
+
+### Backdoor Injection During App Development
+
+If the authentic BloodDonor app had a backdoor installed, this could be exploited in a similar way as a fake app.
+
+It is assumed that a backdoor the the BloodDonor app can be injected either via one or more rogue developers in the developer team, or by the inadvertent usage of a vulnerable or malicious library.
+
+In order to mitigate this risk, a code review process is put in place. Each line of code has to be peer-reviewed before it can be merged via pull request into the production line. The reviewers of a PR are selected randomly to mitigate the risk of a malicious PR being approved by a "rogue reviewer". 
+
+In the build pipeline, static and dynamic code checkers are used to find vulnerabilities that were injected unwittingly or deliberately. For the libraries used by the app, a
+Software Bill of Materials (SBOM) is generated, and the libraries together with their versions are automatically compared against a vulnerability data base.
+
+### Compromised QR Code Reader
+
+Similarly to the two scenarios above, a compromised QR code reader could collect user and heath data, then secretly ex-filtrate that data to use it for criminal purposes.
+
+To mitigate this risk, the QR Code Reader machine is installed in a VLAN segment that does not have access to the internet and, apart from the QR code reader software, does provide any additional services.
+
+The software on the QR Code Reader machine is regularly patched with security updated, and the logs on the machine are scanned periodically for anomalies.
+
+The SW component that actually parses the QR code data is implemented by the same team that implements the app, and also the same software development process and tools are used. These shall ensure that the QR Code Reader can't be compromised/attacked via the QR reader interface.
+
+### Questionnaire Read by Unauthorized Person
+
+There is the risk that an unauthorized person gets access to the health data of a filled out questionnaire, e.g. by opening the BloodDonor app of an unobserved phone, or by trying to extract the health data from the file system of a stolen phone.
+
+The app minimizes that risk by allowing to fill out the questionnaire only one day before the planned appointment, and by removing the health data as soon as its storage is not required any more (see above).
+
+Moreover, the health data stored in the app is encrypted, and access to the mask showing the questionnaire is only granted after the user authenticated himself/herself using a password, fingerprint, or facial scan. 
 
 ## Determination of the residual risks:
 
-See table above. 
-FIXME: shall we describe the items in more detail, instead of just in a table?
-FIXME: The DFA also contains additional items, like:
-- statements regarding necessity, commensurability
-- Interview affected persons
-- Consultation of Data Protection Officer/DPO
+### Skimmer Device
+
+Attackers could implement a skimmer device and put it in front of the QR Code reader such that the device relays the QR code, and at the same time, stores the data internally for future ex-filtration.
+
+A counter measure against this type of attack could be to encrypt the QR code data. As the QR code reader devices are installed in the venue and are regularly observed by the personnel there, the risk of an unnoticed skimmer device is deemed very unlikely.
+
+### Blood Donor Uses the Identity of Another Person
+
+This scenario is assumed to be virtually impossible; on the one hand side, the Red Cross does not compensate for blood donations, other than offering snacks and drinks, which rules out the possibility to donate blood for monetary gain. Moreover, the authenticity of a blood donor is always checked by the personnel at the venue, and must be done using a legal document with photo.
 
 ## References
 - [https://www.jusline.at/gesetz/bsg](https://www.jusline.at/gesetz/bsg)
@@ -176,5 +197,5 @@ FIXME: The DFA also contains additional items, like:
 - [https://www.jusline.at/gesetz/bsv/paragraf/3](https://www.jusline.at/gesetz/bsv/paragraf/3)
 - [https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11)
 - [https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10)
-- https://dsgvo-gesetz.de/art-6-dsgvo/
-
+- [https://gdpr-info.eu/art-6-gdpr/](https://gdpr-info.eu/art-6-gdpr/)
+- [https://gdpr-info.eu/art-9-gdpr/](https://gdpr-info.eu/art-9-gdpr/)
