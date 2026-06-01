@@ -30,7 +30,7 @@ Austrian law regulates how blood donations are to be conducted in the [Blutspend
 
 The long term storage of the questionnaire, however, is not in the scope of the BloodDonorApp.
 
-The process of blood donation is roughly as follows: A prospect donor uses the BloodDonorApp to arrange an appointment the Red Cross venue and to fill out the questionnaire. The appointment data is transmitted to a Server maintained by the Red Cross (1).
+The process of blood donation is roughly as follows: A prospect donor uses the BloodDonorApp to arrange an appointment the Red Cross venue and to fill out the questionnaire. The appointment data is transmitted to a Server maintained by the Red Cross.
 
 At the appointment date, the prospect donor visits the site and prints out the questionnaire to paper. A nurse then requests the blood donor to identify by showing a legal document with photo, like passport or a drivers license. The heart rate, blood pressure and the hemoglobin level (and, unless already provided in a blood donor card, the blood group and Rhesus factor) of the prospect donor are then taken and written down in the paper form.
 
@@ -38,13 +38,15 @@ At the appointment date, the prospect donor visits the site and prints out the q
   <img src="DataFlow.drawio.png" alt="Workflow.drawio.png">
 </p>
 
-If the measured values are within the required boundaries, the donor then visits a doctor who checks the questionnaire and asks the prospect donor additional health related questions. Also, the prospect donor may ask questions, e.g. related to the blood donation process. If the doctor concludes that the prospect donor is fit enough and the questionnaire did not reveal any issues preventing a donation, the prospect donor is admitted to the blood donation process (4), otherwise the prospect donor cannot donate blood in the moment and is asked to visit the venue in a few weeks e.g. after enough time after a recently suffered cold has elapsed (3).
+If the measured values are within the required boundaries, the donor then visits a doctor who checks the questionnaire and asks the prospect donor additional health related questions. Also, the prospect donor may ask questions, e.g. related to the blood donation process. If the doctor concludes that the prospect donor is fit enough and the questionnaire did not reveal any issues preventing a donation, the prospect donor is admitted to the blood donation process, otherwise the prospect donor cannot donate blood in the moment and is asked to visit the venue in a few weeks e.g. after enough time after a recently suffered cold has elapsed.
 
 During the donation process, additional blood samples are taken for the screening of the blood; the samples are, for instance, checked for HIV, Hepatitis B/C.
 
 If the samples did not reveal any problems, the donated blood can then be delivered to health institutions in need and eventually administered to a patient. The filled questionnaire, together with the lab results of the blood samples are then sent to a long term data storage for at least 30 years as required by Austrian legislation (5).
 
 ## Consideration about collection, use, disclosure and storage of personal data
+
+In the context of the BloodDonor app, the data subject is the user of the app, while the Austrian Red Cross is the data controller. As the app is implemented by the IT department of the Red Cross itself, there is no data processor.
 
 ### Personal User Data
 
@@ -193,15 +195,13 @@ This scenario is assumed to be virtually impossible; on the one hand side, the R
 
 ## Necessity and proportionality
 
-The processing of personal data is necessary to organize blood donation appointments, assess donor eligibility, protect donor and recipient safety, and fulfil legal documentation and traceability obligations.
+The processing of personal data is necessary to organize blood donation appointments, assess donor eligibility, protect donor and recipient safety, and fulfill legal documentation and traceability obligations.
 
 The app reduces waiting times at the donation venue by allowing donors to complete the questionnaire before arrival. However, the processing is limited to data that is necessary for appointment handling, medical assessment, blood safety, and legal documentation.
 
 The questionnaire does not collect data for unrelated purposes. Abandoned questionnaire drafts are deleted automatically after a defined period. Data that is no longer required for the donation process or legal retention obligations is securely deleted or destroyed.
 
 The processing is therefore considered proportionate, provided that data minimization, strict access control, encryption, retention limits, and secure deletion are implemented as described.
-
-
 
 ## References
 - [https://www.jusline.at/gesetz/bsg](https://www.jusline.at/gesetz/bsg)
