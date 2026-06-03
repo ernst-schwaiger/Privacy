@@ -44,7 +44,7 @@ During the donation process, additional blood samples are taken for the screenin
 
 If the samples did not reveal any problems, the donated blood can then be delivered to health institutions in need and eventually administered to a patient. The filled questionnaire, together with the lab results of the blood samples are then sent to a long term data storage for at least 30 years as required by Austrian legislation (5).
 
-## Consideration about collection, use, disclosure and storage of personal data
+## Consideration about Collection, Use, Disclosure and Storage of Personal Data
 
 In the context of the BloodDonor app, the data subject is the user of the app, while the Austrian Red Cross is the data controller. As the app is implemented by the IT department of the Red Cross itself, there is no data processor.
 
@@ -92,14 +92,7 @@ Moreover, the personal data of the donor and the questionnaire are part of the d
 
 ### Nature and Sensitivity of the Collected Data
 
-The personal user data stored in the app, as well as the content of the questionnaire are "personal data" in the sense of article 4 paragraph 1 of the GDPR, therefore the GDPR applies.
-
-In addition to that, the answers given in the questionnaire are health data, which are "special categories of personal data" as described in [Article 9 of the GDPR](https://gdpr-info.eu/art-9-gdpr/). Paragraph 1 prohibits their processing in general, however paragraph 2 allows it if one or more explicitly stated conditions apply. For the purpose of donating blood, the conditions listed in Art 9 paragraph 2 lit (a), (g), (h), and (i) apply.
-
-- (a) the data subject has given explicit consent to the processing of the data
-- (g) processing is necessary for substantial public interest (i.e. saving peoples lives using blood transfusions while avoiding health risks for donor and recipient)
-- (h) processing is necessary for medical purposes
-- (i) processing is necessary for reasons of public interest in the area of public health
+The personal user data stored in the app, as well as the content of the questionnaire are "personal data" in the sense of [Article 4 paragraph 1 of the GDPR](https://gdpr-info.eu/art-4-gdpr/), therefore the GDPR applies. In addition to that, the answers given in the questionnaire are health data, which are "special categories of personal data" as described in [Article 9 of the GDPR](https://gdpr-info.eu/art-9-gdpr/). Details are described in chapter [Description of the Lawfulness of Processing](#description-of-the-lawfulness-of-processing).
 
 ## Conclusion: Is a DPIA necessary?
 
@@ -119,7 +112,14 @@ The data in the QR is encoded but not encrypted. Encryption in this scenario doe
 
 The app minimizes the time period in which questionnaire data is stored on the cell phone. On the one hand this is for practical reasons: If some event happens which is relevant for the questionnaire (e.g. the user suffers an infection or illness), the pre-filled questionnaire would not contain correct data any more. On the other hand, this minimizes the period in time in which the app stores health data of the user, thereby reducing the likelihood of a data breach.
 
-## Description of of the lawfulness of processing
+## Description of the Lawfulness of Processing
+
+The answers given in the questionnaire are health data, which are "special categories of personal data" as described in [Article 9 of the GDPR](https://gdpr-info.eu/art-9-gdpr/). Paragraph 1 prohibits their processing in general, however paragraph 2 allows it if one or more explicitly stated conditions apply. For the purpose of donating blood, the conditions listed in Art 9 paragraph 2 lit (a), (g), (h), and (i) apply.
+
+- (a) the data subject has given explicit consent to the processing of the data
+- (g) processing is necessary for substantial public interest (i.e. saving peoples lives using blood transfusions while avoiding health risks for donor and recipient)
+- (h) processing is necessary for medical purposes
+- (i) processing is necessary for reasons of public interest in the area of public health
 
 Transparency towards the subject is achieved by clearly communicating the exact purposes and nature of the processing via the data protection declaration that is shown to the user before the questionnaire. Moreover, the user is also informed that the form can alternatively be filled out at the venue.
 
@@ -131,7 +131,7 @@ The app deletes the questionnaire data immediately after it is not required any 
 - After the user cancels the appointment
 - One hour after the appointment date if the questionnaire has not been printed out
 
-## Identification of risks to the rights and freedoms of individuals (data subjects)
+## Identification of Risks to the Rights and Freedoms of Individuals (data subjects)
 
 |**Item**|**Describe source of risk and nature of potential impact on individuals.** Include associated compliance and corporate risks as necessary. |**Likelihood of harm**|**Severity of harm**|**Overall risk**|
 |-|-|-|-|-|
@@ -142,7 +142,7 @@ The app deletes the questionnaire data immediately after it is not required any 
 |5|Skimmer Device installed|Virtually impossible|Very Severe|Medium|
 |6|Blood donor uses the identity of another person|Virtually impossible|Low|Very Low|
 
-## Description of measures or methods to mitigate risks, both existing and planned
+## Description of Measures or Methods to Mitigate Risks, both Existing and Planned
 
 ### Malicious Fake BloodDonorApp
 
@@ -181,7 +181,7 @@ The app minimizes that risk by allowing to fill out the questionnaire only one d
 
 Moreover, the health data stored in the app is encrypted, and access to the mask showing the questionnaire is only granted after the user authenticated himself/herself using a password, fingerprint, or facial scan. 
 
-## Determination of the residual risks:
+## Determination of the Residual Risks:
 
 ### Skimmer Device
 
@@ -193,7 +193,7 @@ A counter measure against this type of attack could be to encrypt the QR code da
 
 This scenario is assumed to be virtually impossible; on the one hand side, the Red Cross does not compensate for blood donations, other than offering snacks and drinks, which rules out the possibility to donate blood for monetary gain. Moreover, the authenticity of a blood donor is always checked by the personnel at the venue, and must be done using a legal document with photo.
 
-## Necessity and proportionality
+## Necessity and Proportionality
 
 The processing of personal data is necessary to organize blood donation appointments, assess donor eligibility, protect donor and recipient safety, and fulfill legal documentation and traceability obligations.
 
@@ -209,5 +209,6 @@ The processing is therefore considered proportionate, provided that data minimiz
 - [https://www.jusline.at/gesetz/bsv/paragraf/3](https://www.jusline.at/gesetz/bsv/paragraf/3)
 - [https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011170&FassungVom=2023-04-11)
 - [https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10011145&FassungVom=2023-05-10)
+- [https://gdpr-info.eu/art-4-gdpr/](https://gdpr-info.eu/art-4-gdpr/)
 - [https://gdpr-info.eu/art-6-gdpr/](https://gdpr-info.eu/art-6-gdpr/)
 - [https://gdpr-info.eu/art-9-gdpr/](https://gdpr-info.eu/art-9-gdpr/)
